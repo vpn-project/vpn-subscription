@@ -1,0 +1,9 @@
+ALTER TABLE "user" ALTER COLUMN id TYPE SERIAL;
+ALTER TABLE account ALTER COLUMN id TYPE INTEGER;
+
+ALTER TABLE account_linked_account ALTER COLUMN id TYPE INTEGER;
+ALTER TABLE account_linked_account ALTER COLUMN main_account_id TYPE INTEGER;
+ALTER TABLE account_linked_account ALTER COLUMN linked_account_id TYPE INTEGER;
+
+ALTER TABLE subscription ALTER COLUMN id TYPE SERIAL;
+ALTER TABLE subscription ALTER COLUMN token_id TYPE INTEGER;
